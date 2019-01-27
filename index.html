@@ -114,6 +114,25 @@
     </ul>
   </div>
   
+  
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    const config = {
+      apiKey: "AIzaSyDBeglCN94twRzC7n8KbFLwbDYsYnILPww",
+      authDomain: "guide-app-24ab2.firebaseapp.com",
+      databaseURL: "https://guide-app-24ab2.firebaseio.com",
+      projectId: "guide-app-24ab2"
+    };
+    firebase.initializeApp(config);
+    
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="scripts/auth.js"></script>
